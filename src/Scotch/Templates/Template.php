@@ -1,0 +1,3 @@
+<?phpnamespace Scotch\Templates;use Scotch\Templates\ITemplate as ITemplate;/*** Abstract Template class.  Provides the ability to create a view template for MVC architecture.*/abstract class Template implements ITemplate{
+	protected $controller;	public $view;		/**	* Construct the template to know the view that needs to be created	* 	* @param Kohva\Scotch\Views\View the view that will need to be rendered	*/	function __construct(&$view)	{		$this->view = $view;
+		$this->controller = $view->controller;	}	/**	* Render the template	*/	abstract function render();	}?>
