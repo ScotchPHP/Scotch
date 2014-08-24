@@ -18,7 +18,7 @@
     },
     "autoload" : {
 	"psr-0" : {
-		"Scotch" : "src/Scotch/"
+		"Scotch" : "src/Scotch/",
 		"Scotch\\Authentication" : "src/Scotch/Authetication/",
 		"Scotch\\Authentication\\OpenID" : "src/Scotch/Authentication/OpenID/",
 		"Scotch\\Caching" : "src/Scotch/Caching/",
